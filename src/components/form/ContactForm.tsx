@@ -28,13 +28,10 @@ const ContactForm = () => {
     } else if (validEmail) {
       try {
         setEmail("");
-        // const response = await service.contactForm(email);
-        // if (response.success) {
-        //   setSuccessMessage(response.message);
-        // } else {
-        //   setError(true);
-        //   setErrMsg(response.message);
-        // }
+        setSuccessMessage("Email Submitted successfully");
+        setTimeout(() => {
+          setSuccessMessage(" ");
+        }, 1000);
       } catch (error) {
         setError(true);
         setErrMsg("An error occurred. Please try again later.");
@@ -76,9 +73,9 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
-      {error && <p className="text-red-500 pl-4 py-2">{errMsg}</p>}
+      {error && <p className="text-red-500 pl-4 py-2 relative">{errMsg}</p>}
       {successMessage && (
-        <p className="text-green-500 pl-4 py-2">{successMessage}</p>
+        <p className="text-green-500 pl-4 py-2 relative">{successMessage}</p>
       )}
     </div>
   );

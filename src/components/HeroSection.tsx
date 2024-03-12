@@ -1,6 +1,5 @@
 import React from "react";
 import { Boxes } from "@/components/ui/background-boxes";
-// import { cn } from "@/utils/cn";
 import ComingSoon from "./ComingSoon";
 import Container from "./Container";
 import Link from "next/link";
@@ -8,8 +7,6 @@ import { Logo } from "@/components/Icons/index";
 import ContactForm from "./form/ContactForm";
 import TextGenerateEffectDemo from "./TextEffect";
 import { InfiniteMovingCardsDemo } from "./InfiniteMovingCardsDemo";
-import Card from "./Card";
-// import Logo from "@/assets/primary-logo.png";
 
 export default function HeroSection() {
   return (
@@ -30,7 +27,6 @@ export default function HeroSection() {
           <ContactForm />
           <InfiniteMovingCardsDemo />
         </Container>
-        {/* <Card /> */}
       </div>
     </div>
   );

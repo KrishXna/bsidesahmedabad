@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
-import LogoImg from "@/assets/primary-logo.png";
 
 export function InfiniteMovingCardsDemo() {
   const [results, setResults] = useState([]);
@@ -28,5 +27,5 @@ export function InfiniteMovingCardsDemo() {
     fetchYtVideos();
   }, []);
 
-  return <InfiniteMovingCards items={results} direction="right" speed="slow" />;
+  return <InfiniteMovingCards items={results} direction="right" speed="fast" />;
 }
