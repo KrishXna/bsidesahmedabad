@@ -1,9 +1,9 @@
 export class Service {
-  async contactForm(email: string) {
+  async contactForm(formData: any) {
     try {
-      const response = await fetch("https://cloud.appwrite.io/v1", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        body: email,
+        body: JSON.stringify(formData),
       });
 
       return await response.json();

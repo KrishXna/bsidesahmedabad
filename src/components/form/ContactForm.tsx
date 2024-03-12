@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-// import { Client } from "appwrite";
+import service from "@/service/client";
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
@@ -9,7 +9,6 @@ const ContactForm = () => {
   const [errMsg, setErrMsg] = useState("");
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
-  // const client = new Client();
 
   const emailRegex =
     /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,})$/;
@@ -28,12 +27,16 @@ const ContactForm = () => {
       setLoading(false);
     } else if (validEmail) {
       try {
-        // await client.subscribe("email", { email });
-        setEmail("");
-        setSuccessMessage("Email Submitted successfully");
-        setTimeout(() => {
-          setSuccessMessage(" ");
-        }, 1000);
+        const response = await service.contactForm({
+          email,
+        });
+        if (response.success) {
+          setEmail("");
+          setSuccessMessage("Email Submitted successfully");
+          setTimeout(() => {
+            setSuccessMessage(" ");
+          }, 1000);
+        }
       } catch (error) {
         setError(true);
         setErrMsg("An error occurred. Please try again later.");

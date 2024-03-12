@@ -12,10 +12,10 @@ export class Service {
     this.databases = new Databases(this.client);
   }
 
-  async createContact(data: Omit<Omit<string, "email">, "tnc">) {
+  async createContact(data: Omit<Omit<any, "email">, "tnc">) {
     try {
       const response = await this.databases.createDocument<
-        Models.Document & Omit<Omit<string, "email">, "tnc">
+        Models.Document & Omit<Omit<any, "email">, "tnc">
       >(
         conf.appwriteDatabaseId,
         conf.appwriteContactCollectionId,
