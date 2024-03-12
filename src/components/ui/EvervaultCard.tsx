@@ -51,8 +51,16 @@ export const EvervaultCard = ({
           <div className="relative w-full rounded-full flex items-center justify-center px-1">
             <div className="absolute w-full h-full blur-sm rounded-full" />
             {/* <span className="dark:text-white text-black z-20">{text}</span> */}
-            <ContactForm />
+            <h2
+              className={cn(
+                "uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-[#B026FF] via-[#04FDA3] to-[#B026FF] sm:mb-6"
+              )}
+            >
+              <span>coming</span>
+              &nbsp;soon
+            </h2>
           </div>
+          {/* <ContactForm /> */}
         </div>
       </div>
     </div>

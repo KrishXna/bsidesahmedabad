@@ -13,6 +13,13 @@ module.exports = {
     fontFamily: {
       montserrat: ["montserrat"],
     },
+    extend: {
+      backgroundImage: {
+        gif: "url('../assets/GIF.gif')",
+        "b-gradient":
+          "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0) 100%)",
+      },
+    },
   },
   plugins: [
     // rest of the code
