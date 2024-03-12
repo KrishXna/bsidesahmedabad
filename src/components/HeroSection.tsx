@@ -24,7 +24,7 @@ export default function HeroSection() {
       <div className="relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center h-auto">
         <div className="absolute inset-0 w-full pb-20 bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
         <Boxes />
-        <Container className="py-40 md:space-y-10">
+        <Container className="pt-40 md:space-y-10">
           <TextGenerateEffectDemo />
           <ComingSoon />
           <ContactForm />

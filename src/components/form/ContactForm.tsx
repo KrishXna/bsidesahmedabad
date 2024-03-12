@@ -39,8 +39,8 @@ const ContactForm = () => {
             <input
               type="text"
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter Your Email here..."
-              className="w-full rounded-full p-4 text-black border-none outline-none hover:shadow-[#B026FF] shadow-md"
+              placeholder="Enter Your Email"
+              className="w-full rounded-full pl-6 py-4 text-black border-none outline-none hover:shadow-[#B026FF] shadow-md"
             />
             <div className="absolute right-1.5 top-[50%] -translate-y-[50%] bg-gradient-to-r from-[#B026FF] to-[#04FDA3] h-[80%] px-4 rounded-full text-white shadow-2xl">
               <div className="flex justify-center items-center h-full">
