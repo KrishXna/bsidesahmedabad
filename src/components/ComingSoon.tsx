@@ -1,7 +1,7 @@
 import React from "react";
 import { EvervaultCard, Icon } from "@/components/ui/EvervaultCard";
 
-const InputBox = () => {
+const ComingSoon = () => {
   return (
     <div className="relative h-[10rem] w-full">
       <EvervaultCard />
@@ -9,4 +9,4 @@ const InputBox = () => {
   );
 };
 
-export default InputBox;
+export default ComingSoon;

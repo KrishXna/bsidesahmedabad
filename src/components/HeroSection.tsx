@@ -2,7 +2,7 @@ import React from "react";
 import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
-import InputBox from "./InputBox";
+import ComingSoon from "./ComingSoon";
 import Container from "./Container";
 import Link from "next/link";
 import { Logo } from "@/components/Icons/index";
@@ -11,8 +11,8 @@ import ContactForm from "./form/ContactForm";
 
 export default function HeroSection() {
   return (
-    <>
-      <div className="absolute inset-x-0 top-8 z-50">
+    <div className="relative w-full h-full">
+      <div className="absolute inset-x-0 top-5 z-50">
         <Container fluid className="xl:pl-8 relative">
           <Link href="/">
             <Logo />
@@ -20,7 +20,7 @@ export default function HeroSection() {
         </Container>
       </div>
       <div
-        className="h-screen relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center"
+        className="min-h-[50rem] h-screen relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center"
         style={
           {
             // backgroundImage: `url(${Logo.src})`,
@@ -31,12 +31,12 @@ export default function HeroSection() {
         <Boxes />
         <Container className="space-y-6">
           <div className="relative mx-auto">
-            <p className="text-white font-bold text-2xl md:text-5xl text-center !leading-tight">
+            <p className="text-white font-bold text-3xl md:text-5xl text-center !leading-tight">
               India&apos;s most loving cyber security conference BSides
               Ahmedabad 0x05
             </p>
           </div>
-          <InputBox />
+          <ComingSoon />
           <ContactForm />
           <div className="relative bg-black p-4 rounded-xl">
             <p className="text-white font-montserrat font-bold text-xl md:text-3xl text-center">
@@ -52,7 +52,7 @@ export default function HeroSection() {
           </div>
         </Container>
       </div>
-    </>
+    </div>
   );
 }
 
