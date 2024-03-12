@@ -9,7 +9,7 @@ type Props = {
 
 export const Logo = ({ width = 200, className = "" }: Props) => {
   return (
-    <div className="w-[120px] sm:w-[200px]">
+    <div className="w-[120px] sm:w-[170px]">
       <Image src={LogoImage} alt="Logo" />
     </div>
   );

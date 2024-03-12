@@ -2,6 +2,7 @@
 
 import service from "@/service/client";
 import React, { useState } from "react";
+
 const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
@@ -31,7 +32,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col max-w-3xl mx-auto pb-10">
+    <div className="flex flex-col max-w-3xl mx-auto pb-10 w-full">
       <div className="relative">
         <form onSubmit={handleSubmit}>
           <div className="relative">
