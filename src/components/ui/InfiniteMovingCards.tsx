@@ -88,7 +88,7 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item: any) => (
-          <div
+          <li
             key={item.etag}
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
             style={{
@@ -108,7 +108,7 @@ export const InfiniteMovingCards = ({
                 link={`https://www.youtube.com/watch?v=${item?.id?.videoId}`}
               />
             </blockquote>
-          </div>
+          </li>
         ))}
       </ul>
     </div>
