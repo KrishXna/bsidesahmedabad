@@ -11,8 +11,8 @@ type Props = {
 const Card = ({ img, name, title, link }: Props) => {
   return (
     <div>
-      <img src={img} alt={name} className="w-full" />
-      <div className="flex justify-between items-center pt-4">
+      <img src={img} alt={name} className="w-full rounded-md shadow-sm" />
+      <div className="flex justify-between gap-x-2 md:gap-x-4 items-center pt-4">
         <p className="text-white">{title}</p>
         <Button href={link} variant="primary" externalLink blank>
           Watch
