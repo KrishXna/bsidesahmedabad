@@ -1,7 +1,7 @@
 "use client";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 
-const words = `Dive into the cybersecurity world with flair at BSides Ahmedabad 101
+const words = `India's Premier Hacking Conference
 `;
 
 export default function TextGenerateEffectDemo() {

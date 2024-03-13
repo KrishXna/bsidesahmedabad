@@ -32,8 +32,3 @@ export default function HeroSection() {
     </div>
   );
 }
-
-// India's most loving cyber security confrence bsides ahmedabad 0x05 101
-
-// bottom;
-// mean while checkout our keynotes talk on youtube <link >

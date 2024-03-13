@@ -1,6 +1,7 @@
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
 import Card from "../Card";
+import SpeakerCard from "../SpeakerCard";
 
 export const InfiniteMovingCards = ({
   items,
@@ -11,7 +12,6 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     img: any;
-    name: string;
     title: string;
     link?: string;
   }[];
@@ -101,12 +101,12 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <Card
+              {/* <Card
                 img={item.snippet?.thumbnails?.high?.url}
                 title={item?.snippet?.title}
-                name={item?.snippet?.description}
                 link={`https://www.youtube.com/watch?v=${item?.id?.videoId}`}
-              />
+              /> */}
+              <SpeakerCard img={item.img} title={item.title} link={item.link} />
             </blockquote>
           </li>
         ))}

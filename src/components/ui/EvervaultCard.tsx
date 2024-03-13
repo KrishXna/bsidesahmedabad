@@ -3,7 +3,6 @@ import { useMotionValue } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { useMotionTemplate, motion } from "framer-motion";
 import { cn } from "@/utils/cn";
-import ContactForm from "../form/ContactForm";
 
 export const EvervaultCard = ({
   text,
@@ -60,7 +59,6 @@ export const EvervaultCard = ({
               &nbsp;soon
             </h2>
           </div>
-          {/* <ContactForm /> */}
         </div>
       </div>
     </div>

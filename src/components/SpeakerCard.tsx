@@ -1,16 +1,21 @@
-"use client";
 import React from "react";
 import Button from "./Button";
+import Image from "next/image";
 
 type Props = {
-  img: any;
   title: string;
+  img: any;
   link: string;
 };
-const Card = ({ img, title, link }: Props) => {
+
+const SpeakerCard = ({ title, link, img }: Props) => {
   return (
     <div>
-      <img src={img} alt={title} className="w-full rounded-md shadow-sm" />
+      <Image
+        src={img}
+        alt={title}
+        className="w-full h-60 rounded-md shadow-sm"
+      />
       <div className="flex justify-between gap-x-2 md:gap-x-4 items-center pt-4">
         <p className="text-white">{title}</p>
         <Button href={link} variant="primary" externalLink blank>
@@ -21,4 +26,4 @@ const Card = ({ img, title, link }: Props) => {
   );
 };
 
-export default Card;
+export default SpeakerCard;

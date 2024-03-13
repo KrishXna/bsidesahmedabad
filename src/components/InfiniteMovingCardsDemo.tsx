@@ -1,6 +1,35 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
+import Speaker1 from "@/assets/speakers/speaker1.jpg";
+import Speaker2 from "@/assets/speakers/speaker2.jpg";
+import Speaker3 from "@/assets/speakers/speake3.jpg";
+import Speaker4 from "@/assets/speakers/speaker4.jpg";
+
+const data = [
+  {
+    title: "CISO's evolving role: From IT Leader to Boardroom Advisor",
+    img: Speaker1,
+    link: "https://m.youtube.com/watch?v=supHTJyG3Kc",
+  },
+  {
+    title:
+      "Hacking on Bug Bounties for 10 years: Shubs' (@infosec_au) Keynote at BSides Ahmedabad 2023",
+    img: Speaker2,
+    link: "https://m.youtube.com/watch?v=aqMyveKjMSA",
+  },
+  {
+    title: "Relive the excitement of BSides Ahmedabad 2023!",
+    img: Speaker3,
+    link: "https://m.youtube.com/watch?v=HOc6rzZ0ilc",
+  },
+  {
+    title:
+      "CXO Panel: How to communicate security in Layman words to Boards &amp; Non-Technical Stakeholders",
+    img: Speaker4,
+    link: "https://m.youtube.com/watch?v=DjrL7zCllqo",
+  },
+];
 
 export function InfiniteMovingCardsDemo() {
   const [results, setResults] = useState([]);
@@ -41,6 +70,6 @@ export function InfiniteMovingCardsDemo() {
   return loading ? (
     <div>Loading...</div>
   ) : (
-    <InfiniteMovingCards items={results} direction="right" speed="slow" />
+    <InfiniteMovingCards items={data} direction="right" speed="slow" />
   );
 }
