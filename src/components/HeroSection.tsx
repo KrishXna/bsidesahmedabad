@@ -32,7 +32,7 @@ export default function HeroSection() {
   );
 }
 
-// India's most loving cyber security confrence bsides ahmedabad 0x05
+// India's most loving cyber security confrence bsides ahmedabad 0x05 101
 
 // bottom;
 // mean while checkout our keynotes talk on youtube <link >
