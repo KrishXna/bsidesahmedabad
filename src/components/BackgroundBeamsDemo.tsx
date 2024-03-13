@@ -66,7 +66,7 @@ export function BackgroundBeamsDemo() {
         </Container>
         <BackgroundBeams />
       </div>
-      <div className="text-white flex items-center gap-x-5 justify-center bg-black h-auto w-full pt-5 pb-2">
+      <div className="text-white flex items-center gap-x-5 justify-center bg-black h-auto w-full py-5">
         ARCHIVE&nbsp;
         {archiveData.map((item) => (
           <span className="hover:text-[#36F097]" key={item.year}>
