@@ -27,6 +27,7 @@ export default function HeroSection() {
           <ContactForm />
           <InfiniteMovingCardsDemo />
         </Container>
+        <hr className="w-full relative border" />
       </div>
     </div>
   );
