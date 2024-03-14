@@ -2,8 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Audiowide, Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-
 const audiowide = Audiowide({
   weight: "400",
   subsets: ["latin"],
@@ -16,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "BSides Ahmedabad Coming Soon 2024",
+  title: "BSides Ahmedabad Coming Soon 2k24",
   description: "",
 };
 
