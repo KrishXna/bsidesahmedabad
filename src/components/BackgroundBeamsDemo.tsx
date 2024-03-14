@@ -20,7 +20,7 @@ const archiveData = [
 export function BackgroundBeamsDemo() {
   return (
     <>
-      <div className="h-[40rem] w-full bg-slate-900 relative flex flex-col items-center justify-center antialiased">
+      <div className="h-[25rem] w-full bg-slate-900 relative flex flex-col items-center justify-center antialiased">
         <Container>
           <div className="flex flex-wrap relative z-[1] gap-y-8">
             <div className="w-full md:w-1/2 flex flex-wrap justify-center items-center">

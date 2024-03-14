@@ -5,13 +5,17 @@ import { cn } from "@/utils/cn";
 
 export const TextGenerateEffect = ({
   words,
+  title,
   className,
 }: {
   words: string;
+  title: string;
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+  let titleArray = title.split(" ");
+
   useEffect(() => {
     animate(
       "span",
@@ -27,15 +31,24 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span key={word + idx} className="opacity-0">
-              {word}{" "}
-            </motion.span>
-          );
-        })}
-      </motion.div>
+      <>
+        <motion.div ref={scope} className="max-w-4xl mx-auto">
+          {wordsArray.map((word, idx) => {
+            return (
+              <motion.span key={word + idx} className="opacity-0">
+                {word}{" "}
+              </motion.span>
+            );
+          })}
+          {titleArray.map((title, idx) => {
+            return (
+              <motion.span key={title + idx} className="opacity-0 uppercase">
+                {title}{" "}
+              </motion.span>
+            );
+          })}
+        </motion.div>
+      </>
     );
   };
 
